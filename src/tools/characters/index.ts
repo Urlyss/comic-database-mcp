@@ -1,22 +1,10 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
-import fs from 'fs';
-import path from 'path';
 import { ComicVineClient, FilterParams } from '../../api/client';
 import { characterOptionsSchema } from './schemas';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-import { z } from 'zod';
 import TurndownService from 'turndown'
 
 var turndownService = new TurndownService()
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const documentation = fs.readFileSync(
-    path.join(__dirname, 'documentation.md'),
-    'utf-8'
-);
 
 export function registerCharacterTools(server: McpServer, client: ComicVineClient) {
     server.tool(

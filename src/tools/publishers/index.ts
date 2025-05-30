@@ -1,18 +1,6 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
-import fs from 'fs';
-import path from 'path';
 import { ComicVineClient } from '../../api/client';
 import { publisherOptionsSchema } from './schemas';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const documentation = fs.readFileSync(
-    path.join(__dirname, 'documentation.md'),
-    'utf-8'
-);
 
 export function registerPublisherTools(server: McpServer, client: ComicVineClient) {
     server.tool(
