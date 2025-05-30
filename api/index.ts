@@ -2,9 +2,9 @@ import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
 import express from 'express';
 import { randomUUID } from 'crypto';
-import { ComicVineClient } from './src/api/client';
+import { ComicVineClient } from '../src/api/client';
 import { isInitializeRequest } from '@modelcontextprotocol/sdk/types.js';
-import { registerAllTools } from './src/tools';
+import { registerAllTools } from '../src/tools';
 
 const app = express();
 app.use(express.json());
@@ -98,7 +98,7 @@ app.get('/mcp', handleSessionRequest);
 app.delete('/mcp', handleSessionRequest);
 
 // Start the server
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 80;
 app.listen(port, () => {
     console.log(`Comic Vine MCP Server listening on port ${port}`);
 });
