@@ -1,0 +1,27 @@
+{
+  "name": "comic-vine-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "npx tsx --watch --env-file=.env index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "axios": "^1.9.0",
+    "comic-vine-sdk": "^1.2.8",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "ts-node": "^10.9.2",
+    "turndown": "^7.2.0",
+    "zod": "^3.25.30",
+    "zod-to-json-schema": "^3.24.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.21",
+    "@types/turndown": "^5.0.5",
+    "typescript": "^5.8.3"
+  }
+}
