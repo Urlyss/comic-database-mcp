@@ -1,5 +1,5 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
-import { ComicVineClient, FilterParams } from '../../api/client';
+import { ComicVineClient } from '../../client';
 import { characterOptionsSchema } from './schemas';
 import TurndownService from 'turndown'
 

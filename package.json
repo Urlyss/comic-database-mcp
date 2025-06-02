@@ -4,7 +4,9 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/api/index.js",
-    "dev": "npx tsx --watch --env-file=.env api/index.ts"
+    "dev": "npx tsx --watch --env-file=.env api/index.ts",
+    "stdio-dev": "npx tsx --watch --env-file=.env api/stdio-index.ts",
+    "stdio-start": "node dist/api/stdio-index.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",

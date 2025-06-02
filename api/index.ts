@@ -2,7 +2,7 @@ import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
 import express from 'express';
 import { randomUUID } from 'crypto';
-import { ComicVineClient } from '../src/api/client';
+import { ComicVineClient } from '../src/client';
 import { isInitializeRequest } from '@modelcontextprotocol/sdk/types.js';
 import { registerAllTools } from '../src/tools';
 

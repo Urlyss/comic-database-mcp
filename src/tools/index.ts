@@ -1,5 +1,5 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
-import { ComicVineClient } from '../api/client';
+import { ComicVineClient } from '../client';
 import { registerCharacterTools } from './characters';
 import { registerIssueTools } from './issues';
 import { registerPublisherTools } from './publishers';
